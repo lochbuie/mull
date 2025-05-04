@@ -418,7 +418,7 @@ function App() {
         <section className="ivy-bio" id="about">
           <h2>About Me</h2>
           <p>
-            I am Jackson McLain, a Product Analyst at Transcard and a current Master of Engineering Management (MEM) Student at Dartmouth College — a collaborative program taught by faculty from the Thayer School of Engineering and the Tuck School of Business. I am passionate about academic excellence, research, and contributing to the vibrant Ivy League community. My interests span interdisciplinary studies, innovation, and leadership.
+            I am Jackson McLain, a Product Analyst at Transcard and a current Master of Engineering Management (MEM) Student at Dartmouth College — a collaborative program taught by faculty from the Thayer School of Engineering and the Tuck School of Business. 
           </p>
           <ul className="ivy-links">
             <li><a href="mailto:jackson.mclain@dartmouth.edu">Email</a></li>
