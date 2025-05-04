@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Lora:wght@400;700&display=swap');
+
+body {
+  font-family: 'Lora', serif;
+  background: #f9f6f1 url('./assets/ivyimage.jpg') center center/cover no-repeat fixed;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
@@ -48,27 +55,29 @@
   font-style: italic;
 }
 
-h1 {
-  font-family: 'Georgia', 'Times New Roman', Times, serif;
-  color: #00693e;
-  margin-bottom: 0.5em;
+h1, h2, h3, h4, h5, h6, .ivy-header h1, .ivy-header h2, .ivy-bio h2, .ivy-skills h2, .ivy-projects h2, .ivy-contact h2, .ivy-travel h2 {
+  font-family: 'Cormorant Garamond', serif;
+  color: #004d2c;
+  letter-spacing: 0.02em;
 }
 
 .ivy-container {
+  background: #f9f6f1;
+  color: #004d2c;
+  padding-top: 5.5em;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: #00693e;
-  color: #fff;
+  position: relative;
+  z-index: 1;
+  /* Subtle paper texture overlay */
+  background-image: url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 .ivy-header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  z-index: 2;
   margin-bottom: 2em;
+  margin-top: 1em;
 }
 
 .ivy-shield {
@@ -79,23 +88,26 @@ h1 {
 }
 
 .ivy-subtitle {
-  font-family: 'Georgia', 'Times New Roman', Times, serif;
-  color: #e6f2ec;
   font-size: 1.3em;
   margin-top: 0.2em;
   font-weight: 400;
 }
 
+.ivy-bio, .ivy-weather, .ivy-travel, .ivy-skills, .ivy-projects, .ivy-contact {
+  background: rgba(255, 255, 255, 0.85) !important;
+}
+
 .ivy-bio {
-  background: #e6f2ec;
-  color: #00693e;
-  border-radius: 12px;
-  box-shadow: 0 4px 24px 0 #00693e22;
-  border: 2px solid #00693e;
-  padding: 2em;
-  max-width: 500px;
-  margin: 0 auto 2em auto;
-  font-size: 1.15em;
+  background: #fffbe9;
+  border: 1.5px solid #bfa14a;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px 0 #bfa14a22;
+  padding: 2.5em 2em 2.5em 2em;
+  margin-bottom: 2.5em;
+  margin-top: 0;
+  width: 90vw;
+  max-width: 800px;
+  position: relative;
 }
 
 .ivy-links {
@@ -117,8 +129,407 @@ h1 {
 
 .ivy-footer {
   margin-top: auto;
-  padding: 1em 0 0 0;
-  color: #e6f2ec;
-  font-size: 0.95em;
+  padding: 2em 0 0 0;
+  color: #004d2c;
+  font-size: 1.1em;
   letter-spacing: 0.02em;
+  text-align: center;
+  position: relative;
+  font-family: 'Lora', serif;
+}
+.ivy-footer .wax-seal {
+  display: block;
+  margin: 0 auto 0.5em auto;
+  width: 48px;
+  height: 48px;
+}
+.ivy-footer .ivy-signature {
+  font-size: 1.5em;
+  color: #bfa14a;
+  margin-top: 0.5em;
+  display: block;
+}
+
+/* --- Animated Skill Bars --- */
+.ivy-skills {
+  background: #fffbe9;
+  border: 1.5px solid #bfa14a;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px 0 #bfa14a22;
+  padding: 2.5em 2em 2.5em 2em;
+  margin-bottom: 2.5em;
+  margin-top: 0;
+  width: 90vw;
+  max-width: 800px;
+  position: relative;
+}
+.ivy-skills h2 {
+  margin-bottom: 1em;
+  font-family: 'Cormorant Garamond', serif;
+}
+.skill-bar {
+  margin-bottom: 1.2em;
+}
+.skill-bar span {
+  display: block;
+  margin-bottom: 0.3em;
+  font-weight: bold;
+}
+.bar-bg {
+  background: #f3e6c6;
+  border-radius: 8px;
+  height: 18px;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #bfa14a;
+}
+.bar-fill {
+  background: linear-gradient(90deg, #bfa14a 60%, #004d2c 100%);
+  height: 100%;
+  width: 0;
+  border-radius: 8px;
+  animation: fillBar 2s forwards;
+}
+@keyframes fillBar {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* --- Interactive Project Cards --- */
+.ivy-projects {
+  background: #fffbe9;
+  border: 1.5px solid #bfa14a;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px 0 #bfa14a22;
+  padding: 2.5em 2em 2.5em 2em;
+  margin-bottom: 2.5em;
+  margin-top: 0;
+  width: 90vw;
+  max-width: 800px;
+  position: relative;
+}
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5em 2em;
+  margin-top: 1.5em;
+}
+.project-card {
+  width: 220px;
+  height: 160px;
+  perspective: 1000px;
+  margin-bottom: 1.5em;
+  border: 1.5px solid #bfa14a;
+  border-radius: 12px;
+  background: #fffbe9;
+  box-shadow: 0 2px 8px #bfa14a22;
+}
+.card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.7s cubic-bezier(.4,2.08,.55,.44);
+  transform-style: preserve-3d;
+}
+.project-card:hover .card-inner {
+  transform: rotateY(180deg);
+}
+.card-front, .card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: #fffbe9;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #bfa14a22;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+}
+.card-front {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #004d2c;
+}
+.card-back {
+  transform: rotateY(180deg);
+  font-size: 1em;
+  flex-direction: column;
+  text-align: center;
+  color: #004d2c;
+}
+
+/* --- Floating Ivy Leaves --- */
+.ivy-leaves-bg {
+  position: fixed;
+  top: 0; left: 0; width: 100vw; height: 100vh;
+  pointer-events: none;
+  z-index: 0;
+}
+.ivy-leaf {
+  width: 56px;
+  height: 56px;
+  opacity: 0.18;
+  animation: floatLeaf 14s linear infinite;
+  display: block;
+  filter: grayscale(0.2) brightness(0.8);
+}
+.leaf1 { position: absolute; left: 8vw; top: -10vh; animation-delay: 0s; }
+.leaf2 { position: absolute; left: 20vw; top: -15vh; animation-delay: 2s; }
+.leaf3 { position: absolute; left: 35vw; top: -20vh; animation-delay: 4s; }
+.leaf4 { position: absolute; left: 50vw; top: -12vh; animation-delay: 6s; }
+.leaf5 { position: absolute; left: 65vw; top: -18vh; animation-delay: 8s; }
+.leaf6 { position: absolute; left: 80vw; top: -8vh; animation-delay: 10s; }
+.leaf7 { position: absolute; left: 90vw; top: -25vh; animation-delay: 12s; }
+@keyframes floatLeaf {
+  0% { transform: translateY(0) rotate(0deg); }
+  100% { transform: translateY(110vh) rotate(360deg); }
+}
+
+.ivy-leaf-real {
+  will-change: transform, opacity;
+  transition: filter 0.2s;
+  pointer-events: none;
+  user-select: none;
+  position: absolute;
+  display: block;
+}
+
+/* --- Contact Section --- */
+.ivy-contact {
+  background: #fffbe9;
+  border: 1.5px solid #bfa14a;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px 0 #bfa14a22;
+  padding: 2.5em 2em 2.5em 2em;
+  margin-bottom: 2.5em;
+  margin-top: 0;
+  width: 90vw;
+  max-width: 800px;
+  position: relative;
+  font-family: 'Lora', serif;
+}
+
+main {
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+  align-items: center;
+}
+
+/* --- Navigation Ribbon --- */
+.ivy-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  background: #004d2c;
+  color: #f9f6f1;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  padding: 1.2em 0 1.2em 0;
+  z-index: 10;
+  box-shadow: 0 2px 12px #00693e33;
+  border-bottom: 4px solid #bfa14a;
+  font-family: 'Cormorant Garamond', serif;
+}
+.ivy-nav a {
+  color: #f9f6f1;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.15em;
+  letter-spacing: 0.04em;
+  transition: color 0.2s, border-bottom 0.2s;
+  padding-bottom: 0.2em;
+  border-bottom: 2px solid transparent;
+}
+.ivy-nav a:hover, .ivy-nav a:focus {
+  color: #bfa14a;
+  border-bottom: 2px solid #bfa14a;
+}
+
+.ivy-divider {
+  width: 100%;
+  text-align: center;
+  margin: 2em 0 2em 0;
+}
+.ivy-divider svg {
+  width: 120px;
+  height: 24px;
+  fill: #bfa14a;
+  opacity: 0.7;
+}
+
+.ivy-header .ivy-shield {
+  display: block;
+  margin: 0 auto 1.5em auto;
+  max-width: 220px;
+  width: 160px;
+  height: auto;
+  box-shadow: 0 4px 24px 0 #bfa14a22;
+  border-radius: 12px;
+  background: #fffbe9;
+  border: 2px solid #bfa14a;
+}
+
+.footer-crest-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1em;
+  margin-top: 2em;
+}
+.footer-crest {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 2px solid #bfa14a;
+  background: #fffbe9;
+  box-shadow: 0 2px 8px #bfa14a22;
+  display: block;
+}
+
+.ivy-footer small {
+  display: block;
+  margin-top: 0.5em;
+  color: #004d2c;
+  font-size: 1.1em;
+}
+
+.ivy-nav.ivy-nav-white {
+  background: linear-gradient(rgba(0, 73, 46, 0.65), rgba(0, 73, 46, 0.65)), url('./assets/books.jpg') center center/cover no-repeat;
+  color: #fff;
+  border-bottom: 4px solid #bfa14a;
+  box-shadow: 0 2px 12px #00693e22;
+}
+.ivy-nav.ivy-nav-white a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 1.15em;
+  letter-spacing: 0.04em;
+  transition: color 0.2s, border-bottom 0.2s;
+  padding-bottom: 0.2em;
+  border-bottom: 2px solid transparent;
+}
+.ivy-nav.ivy-nav-white a:hover, .ivy-nav.ivy-nav-white a:focus {
+  color: #bfa14a;
+  border-bottom: 2px solid #bfa14a;
+}
+.ivy-nav.ivy-nav-white .nav-crest,
+.nav-crest.nav-crest-large {
+  height: 64px;
+  width: auto;
+  margin-right: 2em;
+  vertical-align: middle;
+  display: inline-block;
+  margin-left: 2em;
+  filter: drop-shadow(0 2px 8px #004d2c88);
+}
+
+.ivy-travel {
+  background: #fffbe9;
+  border: 1.5px solid #bfa14a;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px 0 #bfa14a22;
+  padding: 2.5em 2em 2.5em 2em;
+  margin-bottom: 2.5em;
+  margin-top: 0;
+  width: 90vw;
+  max-width: 800px;
+  position: relative;
+  text-align: center;
+}
+.world-map-container {
+  margin: 2em auto 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f9f6f1;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #bfa14a22;
+  border: 1px solid #bfa14a;
+  max-width: 600px;
+  overflow: auto;
+}
+.world-map-svg {
+  width: 100%;
+  max-width: 580px;
+  height: auto;
+  min-height: 200px;
+  background: none;
+  display: block;
+}
+
+@keyframes floatLeafFall {
+  0% { transform: translateY(0) rotate(0deg); }
+  100% { transform: translateY(110vh) rotate(360deg); }
+}
+
+.travel-tooltip {
+  font-family: 'Lora', serif;
+}
+
+.nav-flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2em;
+}
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+.ivy-weather {
+  background: #fffbe9;
+  border: 1.5px solid #bfa14a;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px 0 #bfa14a22;
+  padding: 2.5em 2em 2.5em 2em;
+  margin-bottom: 2.5em;
+  margin-top: 0;
+  width: 90vw;
+  max-width: 800px;
+  position: relative;
+  text-align: center;
+}
+.weather-cards {
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 1.5em;
+}
+.weather-card {
+  background: #e6f2ec;
+  border: 1.5px solid #bfa14a;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px #bfa14a22;
+  padding: 1.5em 2em;
+  min-width: 160px;
+  max-width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.weather-icon {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+.weather-temp {
+  font-size: 2em;
+  font-weight: bold;
+  color: #004d2c;
+  margin-bottom: 0.3em;
+}
+.weather-wind {
+  font-size: 1em;
+  color: #00693e;
 }
