@@ -1,0 +1,124 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #00693e88);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #00b38388);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+  background: #e6f2ec;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px 0 #00693e22;
+  border: 2px solid #00693e;
+  margin: 2em auto;
+  max-width: 400px;
+}
+
+.read-the-docs {
+  color: #00693e;
+  font-style: italic;
+}
+
+h1 {
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
+  color: #00693e;
+  margin-bottom: 0.5em;
+}
+
+.ivy-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #00693e;
+  color: #fff;
+}
+
+.ivy-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2em;
+}
+
+.ivy-shield {
+  border-radius: 8px;
+  background: #fff;
+  padding: 8px;
+  box-shadow: 0 2px 12px 0 #00693e44;
+}
+
+.ivy-subtitle {
+  font-family: 'Georgia', 'Times New Roman', Times, serif;
+  color: #e6f2ec;
+  font-size: 1.3em;
+  margin-top: 0.2em;
+  font-weight: 400;
+}
+
+.ivy-bio {
+  background: #e6f2ec;
+  color: #00693e;
+  border-radius: 12px;
+  box-shadow: 0 4px 24px 0 #00693e22;
+  border: 2px solid #00693e;
+  padding: 2em;
+  max-width: 500px;
+  margin: 0 auto 2em auto;
+  font-size: 1.15em;
+}
+
+.ivy-links {
+  list-style: none;
+  padding: 0;
+  margin: 1em 0 0 0;
+  display: flex;
+  gap: 1.5em;
+}
+.ivy-links a {
+  color: #00693e;
+  font-weight: bold;
+  text-decoration: underline;
+  transition: color 0.2s;
+}
+.ivy-links a:hover {
+  color: #008c5a;
+}
+
+.ivy-footer {
+  margin-top: auto;
+  padding: 1em 0 0 0;
+  color: #e6f2ec;
+  font-size: 0.95em;
+  letter-spacing: 0.02em;
+}
