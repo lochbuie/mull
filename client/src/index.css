@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 47 41% 94%;
+    --foreground: 33 20% 36%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 33 20% 36%;
+
+    --popover: 47 41% 94%;
+    --popover-foreground: 33 20% 36%;
+
+    --primary: 154 100% 20%;
+    --primary-foreground: 47 41% 94%;
+
+    --secondary: 47 41% 94%;
+    --secondary-foreground: 154 100% 20%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 41 31% 59%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 33 20% 36% / 0.2;
+    --input: 33 20% 36% / 0.3;
+    --ring: 154 100% 20%;
+
+    --radius: 0.4rem;
+
+    /* Custom colors */
+    --dartmouth: 154 100% 20%;
+    --cream: 60 56% 92%;
+    --oxblood: 4 48% 20%;
+    --navy: 210 100% 13%;
+    --tweed: 33 20% 36%;
+    --gold: 41 31% 59%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply font-garamond text-tweed bg-cream antialiased;
+    background-image: 
+      linear-gradient(rgba(245, 245, 220, 0.97), rgba(245, 245, 220, 0.97)),
+      url('https://pixabay.com/get/g27c407a4ff6db083ecd5b41a5a04be65208e95df09ea777f9bb9f7b47f731ade43d0d5154b90658d3916fdc2867b699f1c1ba56872b67597ff7d648856c0e198_1280.jpg');
+    background-attachment: fixed;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-playfair text-dartmouth;
+  }
+}
+
+@layer utilities {
+  .pinstripe {
+    background-image: linear-gradient(90deg, transparent 50%, rgba(245, 245, 220, 0.15) 50%);
+    background-size: 4px 100%;
+  }
+
+  .oxford-card {
+    @apply shadow-md border border-tweed/20 transition-all duration-300;
+  }
+
+  .oxford-card:hover {
+    @apply shadow-lg;
+  }
+
+  .quote-mark {
+    @apply font-playfair text-[6rem] leading-none text-dartmouth/15 absolute top-8 left-4;
+  }
+}
