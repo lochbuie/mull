@@ -147,16 +147,16 @@ interface DestinationCardProps {
 
 function DestinationCard({ title, date, description, type, image }: DestinationCardProps) {
   return (
-    <div className="card bg-white border border-lightgray rounded-lg shadow-md overflow-hidden">
+    <div className="border border-gold/30 shadow-md overflow-hidden vintage-shadow">
       <img src={image} alt={title} className="w-full h-48 object-cover" />
-      <div className="p-6">
+      <div className="p-6 bg-huntergreen">
         <div className="flex justify-between items-start mb-2">
-          <h4 className="font-playfair text-dartmouth text-xl">{title}</h4>
-          <span className="text-xs bg-offwhite px-2 py-1 rounded-full border border-lightgray">{type}</span>
+          <h4 className="font-cormorant text-gold text-xl">{title}</h4>
+          <span className="text-xs bg-deepforest px-2 py-1 border border-ivygreen/30 text-cream/90">{type}</span>
         </div>
-        <p className="text-sm text-slate mb-4">{date}</p>
-        <p className="mb-6 text-darkgray">{description}</p>
-        <a href="#" className="text-dartmouth hover:text-dartmouth/80 text-sm font-medium flex items-center gap-1">
+        <p className="text-sm font-garamond italic text-cream/80 mb-4">{date}</p>
+        <p className="mb-6 text-cream/90 font-baskerville">{description}</p>
+        <a href="#" className="text-gold hover:text-cream text-sm font-medium flex items-center gap-1 transition-colors">
           Read Travel Story <ArrowRight size={14} />
         </a>
       </div>

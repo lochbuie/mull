@@ -17,17 +17,17 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       colors: {
-        // Refined dark academia palette
-        darkoak: "#1A150F", // Darker background
-        mahogany: "#3D1E11", // Deeper wood tone
-        oxblood: "#541209", // Richer red
-        tweed: "#695F4C", // Muted accent
-        gold: "#D4AF37", // Brighter gold for better contrast
-        brass: "#B5A642", // Subtle metal tone
-        parchment: "#F2E8CF", // Aged paper 
-        cream: "#FFF8E7", // Lighter text color for contrast
-        sage: "#515F40", // Muted green accent
-        ebony: "#13100B", // Nearly black for depth
+        // Refined dark academia palette with hunter green
+        huntergreen: "#0F241A", // Dark hunter green background (replacing darkoak)
+        deepforest: "#0A2E14", // Deeper green tone (replacing mahogany)
+        oxblood: "#541209", // Richer red (keeping)
+        ivygreen: "#2F4F2F", // Muted green accent (replacing tweed)
+        gold: "#D4AF37", // Brighter gold for better contrast (keeping)
+        brass: "#B5A642", // Subtle metal tone (keeping)
+        parchment: "#F2E8CF", // Aged paper (keeping)
+        cream: "#FFF8E7", // Lighter text color for contrast (keeping)
+        sage: "#515F40", // Muted green accent (keeping)
+        ebony: "#0A1812", // Nearly black for depth with green tint (replacing)
         
         // Default shadcn colors
         background: "hsl(var(--background))",
