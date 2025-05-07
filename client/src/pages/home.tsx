@@ -1,9 +1,10 @@
 import Header from "@/components/header";
 import Hero from "@/components/hero";
 import About from "@/components/about";
-import Research from "@/components/research";
-import Teaching from "@/components/teaching";
-import Essays from "@/components/essays";
+import Travel from "@/components/research"; // This is the renamed Research component
+import Blog from "@/components/teaching"; // This is the renamed Teaching component
+import Projects from "@/components/essays"; // This is the renamed Essays component
+import Hobbies from "@/components/hobbies"; // New Hobbies component
 import Contact from "@/components/contact";
 import Footer from "@/components/footer";
 import { useEffect } from "react";
@@ -34,9 +35,10 @@ export default function Home() {
       <main>
         <Hero />
         <About />
-        <Research />
-        <Teaching />
-        <Essays />
+        <Travel />
+        <Projects />
+        <Blog />
+        <Hobbies />
         <Contact />
       </main>
       <Footer />
