@@ -8,6 +8,7 @@ export default {
       fontFamily: {
         playfair: ["'Playfair Display'", 'serif'],
         garamond: ["'EB Garamond'", 'serif'],
+        baskerville: ["'Libre Baskerville'", 'serif'],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -15,14 +16,17 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       colors: {
-        // Custom color palette with Dartmouth Green
-        dartmouth: "#00693E",
-        white: "#FFFFFF",
-        offwhite: "#F8F8F8",
-        lightgray: "#E8E8E8",
-        darkgray: "#333333",
-        slate: "#556270",
-        accent: "#4ECDC4",
+        // Dark Academia inspired color palette
+        darkoak: "#271D13",
+        mahogany: "#4A2511",
+        oxblood: "#6B1D14",
+        tweed: "#8A7A61",
+        gold: "#B9975B",
+        parchment: "#F2EFE6",
+        ivory: "#F8F3E6",
+        dartmouth: "#00693E", // Keeping this as a brand color
+        copper: "#B87333",
+        chocolate: "#7B3F00",
         
         // Default shadcn colors
         background: "hsl(var(--background))",

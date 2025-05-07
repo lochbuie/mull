@@ -10,22 +10,22 @@ const navItems = [
     href: "#travel",
     dropdown: [
       { name: "Destinations", href: "#destinations" },
-      { name: "Upcoming Trips", href: "#upcoming-trips" },
-      { name: "Photo Gallery", href: "#gallery" }
+      { name: "Expedition Log", href: "#upcoming-trips" },
+      { name: "Photographic Studies", href: "#gallery" }
     ]
   },
   { 
-    name: "Blog", 
+    name: "Journal", 
     href: "#blog",
     dropdown: [
-      { name: "Latest Posts", href: "#latest-posts" },
-      { name: "Topics", href: "#topics" },
-      { name: "Archive", href: "#archive" }
+      { name: "Recent Entries", href: "#latest-posts" },
+      { name: "Academic Interests", href: "#topics" },
+      { name: "Archives", href: "#archive" }
     ]
   },
-  { name: "Projects", href: "#projects" },
-  { name: "Hobbies", href: "#hobbies" },
-  { name: "Contact", href: "#contact" },
+  { name: "Scholarly Works", href: "#projects" },
+  { name: "Pursuits", href: "#hobbies" },
+  { name: "Correspondence", href: "#contact" },
 ];
 
 export default function Header() {
