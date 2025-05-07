@@ -49,9 +49,7 @@ export default function Hero() {
               </div>
               
               <p className="text-lg md:text-xl text-cream/90 max-w-2xl mb-10 font-baskerville leading-relaxed">
-                Exploring academic pursuits and distant horizons with equal fervor—a chronicle 
-                of intellectual inquiry, thoughtful analysis, and the peripatetic's wanderlust
-                through ancient forests and ivy-covered halls.
+                I'm a graduate student at Dartmouth College, pursuing a degree in Engineering Management. Professionally, I work in product at a fintech company, where I help shape user-driven solutions in the financial space. As an Irving Institute Graduate Energy Fellow, I explore the intersection of energy, technology, and sustainability through research. Originally from Signal Mountain, Tennessee, I now live in Hanover, NH, and will be based in London this summer. I love traveling, discovering new cultures, and learning about history. I'll be graduating from Dartmouth College in 2026.
               </p>
               
               <div className="flex flex-col sm:flex-row space-y-5 sm:space-y-0 sm:space-x-8 mt-10">
@@ -81,15 +79,16 @@ export default function Hero() {
               {/* Image */}
               <div className="relative z-10 vintage-shadow">
                 <img 
-                  src="https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
-                  alt="Old library with books" 
-                  className="w-full h-auto object-cover aspect-[3/4]"
+                  src="/mull/hero-portrait.png" 
+                  alt="Portrait" 
+                  style={{ display: "block", maxWidth: "100%", height: "auto", margin: "0 auto" }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-ebony/60 to-transparent"></div>
                 <div className="absolute inset-0 box-border p-6 flex items-end">
                   <div className="relative">
                     <p className="font-cormorant italic text-sm text-cream/70">
-                      "In the quietude of libraries and the cacophony of foreign streets, I discover the same essential truth—knowledge is the map by which we navigate our humanity."
+                      "Generations of Dartmouth students will have at least some familiarity with the 200-year-old case thanks to the oft-quoted words of Daniel Webster, Class of 1801, spoken during his argument on behalf of the College's trustees:
+                      'It is, sir, as I have said, a small college, and yet there are those who love it!'"
                     </p>
                   </div>
                 </div>
