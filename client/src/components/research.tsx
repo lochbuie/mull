@@ -53,33 +53,33 @@ export default function Travel() {
           </div>
           
           <div className="text-center mt-10">
-            <a href="#gallery" className="inline-block border border-dartmouth text-dartmouth hover:bg-dartmouth hover:text-white transition-colors px-5 py-2 rounded">
+            <a href="#gallery" className="inline-block border border-gold text-gold hover:bg-gold hover:text-huntergreen transition-colors px-5 py-2">
               View Photo Gallery
             </a>
           </div>
         </div>
         
         <div id="upcoming-trips" className="mb-16">
-          <h3 className="font-playfair text-dartmouth text-2xl mb-8">Upcoming Adventures</h3>
+          <h3 className="font-cormorant text-gold text-2xl mb-8">Upcoming Adventures</h3>
           
-          <div className="card bg-white p-8 relative overflow-hidden border border-lightgray rounded-lg shadow-md">
+          <div className="elegant-card p-8 relative overflow-hidden border border-gold/30 shadow-md">
             <div className="flex flex-col md:flex-row md:gap-12">
               <div className="md:w-2/3">
-                <h4 className="font-playfair text-dartmouth text-2xl mb-4">Nordic Technology Tour: Copenhagen to Helsinki</h4>
-                <p className="mb-6 text-lg">
+                <h4 className="font-cormorant text-gold text-2xl mb-4">Nordic Technology Tour: Copenhagen to Helsinki</h4>
+                <p className="mb-6 text-lg text-cream/90 font-baskerville">
                   My next major expedition combines my passion for travel with my interest in technology and sustainable innovation.
                 </p>
-                <p className="mb-6">
+                <p className="mb-6 text-cream/90 font-baskerville">
                   This summer, I'll be embarking on a month-long journey through Scandinavia to explore how Nordic countries have become global leaders in sustainable technology, clean energy solutions, and innovative urban planning. The trip will include visits to tech startups, research centers, and smart city initiatives.
                 </p>
-                <p className="mb-6">
+                <p className="mb-6 text-cream/90 font-baskerville">
                   I'll be documenting this unique intersection of travel and technology through blog posts, interviews with local innovators, and a photo series highlighting sustainable design in action.
                 </p>
                 <div className="flex flex-wrap gap-3 mt-8">
-                  <span className="bg-offwhite border border-lightgray px-3 py-1 text-sm rounded-full">Sustainable Tech</span>
-                  <span className="bg-offwhite border border-lightgray px-3 py-1 text-sm rounded-full">Nordic Design</span>
-                  <span className="bg-offwhite border border-lightgray px-3 py-1 text-sm rounded-full">Smart Cities</span>
-                  <span className="bg-offwhite border border-lightgray px-3 py-1 text-sm rounded-full">Clean Energy</span>
+                  <span className="bg-deepforest border border-ivygreen/30 px-3 py-1 text-sm text-cream/90">Sustainable Tech</span>
+                  <span className="bg-deepforest border border-ivygreen/30 px-3 py-1 text-sm text-cream/90">Nordic Design</span>
+                  <span className="bg-deepforest border border-ivygreen/30 px-3 py-1 text-sm text-cream/90">Smart Cities</span>
+                  <span className="bg-deepforest border border-ivygreen/30 px-3 py-1 text-sm text-cream/90">Clean Energy</span>
                 </div>
               </div>
               <div className="md:w-1/3 mt-6 md:mt-0">
@@ -87,23 +87,23 @@ export default function Travel() {
                 <img 
                   src="https://images.unsplash.com/photo-1518156677180-95a2893f3e9f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" 
                   alt="Nordic landscape with modern sustainable architecture" 
-                  className="w-full h-auto rounded-lg shadow-md" 
+                  className="w-full h-auto border border-gold/20 shadow-md vintage-shadow" 
                 />
                 
-                <div className="bg-offwhite border border-lightgray p-4 mt-6 rounded-lg">
-                  <h5 className="font-playfair text-dartmouth mb-3">Trip Itinerary</h5>
+                <div className="bg-deepforest border border-ivygreen/30 p-4 mt-6">
+                  <h5 className="font-cormorant text-gold mb-3">Trip Itinerary</h5>
                   <ul className="space-y-2 text-sm">
                     <li className="flex justify-between">
-                      <span>Copenhagen, Denmark</span>
-                      <span className="text-slate">June 5-10, 2023</span>
+                      <span className="text-cream/90">Copenhagen, Denmark</span>
+                      <span className="text-cream/70 font-garamond italic">June 5-10, 2023</span>
                     </li>
                     <li className="flex justify-between">
-                      <span>Stockholm, Sweden</span>
-                      <span className="text-slate">June 11-17, 2023</span>
+                      <span className="text-cream/90">Stockholm, Sweden</span>
+                      <span className="text-cream/70 font-garamond italic">June 11-17, 2023</span>
                     </li>
                     <li className="flex justify-between">
-                      <span>Helsinki, Finland</span>
-                      <span className="text-slate">June 18-25, 2023</span>
+                      <span className="text-cream/90">Helsinki, Finland</span>
+                      <span className="text-cream/70 font-garamond italic">June 18-25, 2023</span>
                     </li>
                   </ul>
                 </div>
@@ -113,21 +113,21 @@ export default function Travel() {
         </div>
         
         <div id="gallery">
-          <h3 className="font-playfair text-dartmouth text-2xl mb-8">Travel Photography</h3>
+          <h3 className="font-cormorant text-gold text-2xl mb-8">Travel Photography</h3>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Mountain landscape" className="w-full h-64 object-cover rounded-lg shadow-md" />
-            <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Coastal sunset" className="w-full h-64 object-cover rounded-lg shadow-md" />
-            <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Venice canal" className="w-full h-64 object-cover rounded-lg shadow-md" />
-            <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Thai temple" className="w-full h-64 object-cover rounded-lg shadow-md" />
-            <img src="https://images.unsplash.com/photo-1534534573898-db5148bc8b0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Local market" className="w-full h-64 object-cover rounded-lg shadow-md" />
-            <img src="https://images.unsplash.com/photo-1490349708435-19d432984978?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Desert landscape" className="w-full h-64 object-cover rounded-lg shadow-md" />
-            <img src="https://images.unsplash.com/photo-1511739172509-0e5b94a8a2a8?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Northern lights" className="w-full h-64 object-cover rounded-lg shadow-md" />
-            <img src="https://images.unsplash.com/photo-1568454537842-d933259bb258?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Forest waterfall" className="w-full h-64 object-cover rounded-lg shadow-md" />
+            <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Mountain landscape" className="w-full h-64 object-cover border border-gold/20 shadow-md vintage-shadow" />
+            <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Coastal sunset" className="w-full h-64 object-cover border border-gold/20 shadow-md vintage-shadow" />
+            <img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Venice canal" className="w-full h-64 object-cover border border-gold/20 shadow-md vintage-shadow" />
+            <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Thai temple" className="w-full h-64 object-cover border border-gold/20 shadow-md vintage-shadow" />
+            <img src="https://images.unsplash.com/photo-1534534573898-db5148bc8b0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Local market" className="w-full h-64 object-cover border border-gold/20 shadow-md vintage-shadow" />
+            <img src="https://images.unsplash.com/photo-1490349708435-19d432984978?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Desert landscape" className="w-full h-64 object-cover border border-gold/20 shadow-md vintage-shadow" />
+            <img src="https://images.unsplash.com/photo-1511739172509-0e5b94a8a2a8?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Northern lights" className="w-full h-64 object-cover border border-gold/20 shadow-md vintage-shadow" />
+            <img src="https://images.unsplash.com/photo-1568454537842-d933259bb258?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Forest waterfall" className="w-full h-64 object-cover border border-gold/20 shadow-md vintage-shadow" />
           </div>
 
           <div className="text-center mt-10">
-            <a href="#" className="inline-flex items-center justify-center gap-2 bg-dartmouth text-white font-medium px-6 py-3 rounded hover:bg-dartmouth/90 transition-colors">
+            <a href="#" className="inline-flex items-center justify-center gap-2 border border-gold text-gold hover:bg-gold hover:text-huntergreen px-6 py-3 transition-colors">
               <Camera size={18} /> Follow My Photography
             </a>
           </div>
