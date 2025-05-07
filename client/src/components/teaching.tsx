@@ -1,163 +1,160 @@
-import { BookOpen, Globe, ArrowUp10, FileText, Clock, GraduationCap, ArrowRight } from "lucide-react";
+import { BookOpen, Globe, ArrowUp10, FileText, Clock, Code, ArrowRight, Calendar, Tag, MessageCircle, Eye, Heart } from "lucide-react";
 
-export default function Teaching() {
+export default function Blog() {
   return (
-    <section id="teaching" className="py-16 md:py-24">
+    <section id="blog" className="py-16 md:py-24 bg-offwhite">
       <div className="container mx-auto px-4 md:px-8">
         <div className="max-w-3xl mx-auto mb-16">
           <div className="inline-block border-b-2 border-dartmouth mb-6">
-            <h2 className="font-playfair text-dartmouth text-3xl md:text-4xl">Teaching</h2>
+            <h2 className="font-playfair text-dartmouth text-3xl md:text-4xl">Blog</h2>
           </div>
-          <p className="text-lg text-tweed">
-            My teaching philosophy emphasizes close engagement with primary texts, rigorous historical analysis, and developing students' ability to make connections across disciplines. I regularly teach courses on nineteenth-century intellectual history, transatlantic literary movements, and the history of higher education.
+          <p className="text-lg text-darkgray">
+            Welcome to my blog where I share insights about engineering management, travel experiences, technology trends, and personal reflections. Writing helps me process experiences, connect ideas across domains, and share knowledge with others.
           </p>
         </div>
         
-        <div id="courses" className="mb-16">
-          <h3 className="font-playfair text-dartmouth text-2xl mb-8">Current Courses</h3>
+        <div id="latest-posts" className="mb-16">
+          <h3 className="font-playfair text-dartmouth text-2xl mb-8">Latest Posts</h3>
           
           <div className="grid md:grid-cols-2 gap-8">
-            <CourseCard 
-              title="Transatlantic Romanticism"
-              term="Michaelmas Term 2022"
-              level="Graduate"
-              description="Examines the exchange of Romantic ideas between Britain and America, focusing on how authors like Wordsworth, Coleridge, Emerson, and Fuller developed a transatlantic intellectual community."
-              texts={[
-                "Wordsworth, Lyrical Ballads",
-                "Emerson, Nature and Selected Essays",
-                "Fuller, Woman in the Nineteenth Century",
-                "Thoreau, Walden"
-              ]}
+            <BlogPostCard 
+              title="Sustainable Design Principles in Nordic Tech Companies"
+              date="April 15, 2023"
+              category="Technology"
+              description="Exploring how Scandinavian tech startups are integrating environmental responsibility into their product development lifecycle and corporate culture."
+              readTime="8 min read"
+              image="https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+              comments={12}
+              likes={48}
             />
             
-            <CourseCard 
-              title="Victorian Intellectual History"
-              term="Hilary Term 2023"
-              level="Undergraduate"
-              description="Surveys major intellectual developments in Victorian Britain, including responses to industrialization, evolutionary theory, and changing religious beliefs."
-              texts={[
-                "Mill, On Liberty",
-                "Darwin, The Origin of Species (selections)",
-                "Eliot, Middlemarch",
-                "Arnold, Culture and Anarchy"
-              ]}
+            <BlogPostCard 
+              title="Kyoto's Digital Transformation: Balancing Tradition and Innovation"
+              date="March 22, 2023"
+              category="Travel & Tech"
+              description="A look at how Japan's cultural capital is embracing smart city technologies while preserving its historical architecture and cultural practices."
+              readTime="10 min read"
+              image="https://images.unsplash.com/photo-1545569341-9eb8b30979d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+              comments={7}
+              likes={35}
             />
             
-            <CourseCard 
-              title="The Rise of the Modern University"
-              term="Trinity Term 2023"
-              level="Graduate"
-              description="Traces the development of modern academic institutions from medieval universities to the research universities of the late nineteenth and early twentieth centuries."
-              texts={[
-                "Newman, The Idea of a University",
-                "Veblen, The Higher Learning in America",
-                "Snow, The Two Cultures",
-                "Kerr, The Uses of the University"
-              ]}
+            <BlogPostCard 
+              title="Engineering Management: Leading Technical Teams in Remote Environments"
+              date="February 18, 2023"
+              category="Leadership"
+              description="Lessons learned from managing distributed engineering teams, with strategies for effective communication, goal setting, and fostering innovation across time zones."
+              readTime="12 min read"
+              image="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+              comments={23}
+              likes={76}
             />
             
-            <CourseCard 
-              title="Methods in Intellectual History"
-              term="Michaelmas Term 2022"
-              level="Undergraduate"
-              description="Introduces students to the methodological approaches used in intellectual history, with case studies drawn from nineteenth-century British and American thought."
-              texts={[
-                "Skinner, Visions of Politics, Vol. 1",
-                "Lovejoy, The Great Chain of Being",
-                "Pocock, Political Thought and History",
-                "Collingwood, The Idea of History"
-              ]}
+            <BlogPostCard 
+              title="Photography Essentials for Travel Bloggers: Gear and Techniques"
+              date="January 30, 2023"
+              category="Photography"
+              description="My photography kit and workflow for capturing compelling travel images, from equipment choices to post-processing techniques that enhance storytelling."
+              readTime="9 min read"
+              image="https://images.unsplash.com/photo-1452421822248-d4c2b47f0c81?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80"
+              comments={16}
+              likes={52}
             />
+          </div>
+          
+          <div className="text-center mt-10">
+            <a href="#archive" className="inline-block border border-dartmouth text-dartmouth hover:bg-dartmouth hover:text-white transition-colors px-5 py-2 rounded">
+              View All Posts
+            </a>
           </div>
         </div>
         
-        <div id="philosophy" className="mb-16">
-          <h3 className="font-playfair text-dartmouth text-2xl mb-8">Teaching Philosophy</h3>
+        <div id="topics" className="mb-16">
+          <h3 className="font-playfair text-dartmouth text-2xl mb-8">Blog Topics</h3>
           
-          <div className="oxford-card bg-cream p-8">
-            <div className="prose prose-lg max-w-none">
-              <p className="mb-4">
-                My approach to teaching is grounded in the belief that historical understanding requires both deep engagement with primary sources and awareness of the contexts in which ideas developed and circulated. I emphasize three key principles in my pedagogy:
-              </p>
+          <div className="card bg-white p-8 border border-lightgray rounded-lg shadow-md">
+            <div className="grid md:grid-cols-3 gap-8">
+              <TopicCard 
+                title="Technology & Innovation"
+                description="Explorations of emerging technologies, software engineering practices, and the intersection of technical innovation with management principles."
+                icon={<Code className="text-dartmouth text-2xl" />}
+                count={14}
+              />
               
-              <div className="grid md:grid-cols-3 gap-8 my-8">
-                <div className="bg-white p-6 oxford-card">
-                  <div className="text-gold text-2xl mb-3">
-                    <BookOpen />
-                  </div>
-                  <h4 className="font-playfair text-dartmouth text-lg mb-2">Close Reading</h4>
-                  <p className="text-sm">
-                    Developing students' ability to analyze texts carefully, attending to language, argument structure, and rhetorical strategies.
-                  </p>
-                </div>
-                
-                <div className="bg-white p-6 oxford-card">
-                  <div className="text-gold text-2xl mb-3">
-                    <Globe />
-                  </div>
-                  <h4 className="font-playfair text-dartmouth text-lg mb-2">Contextual Analysis</h4>
-                  <p className="text-sm">
-                    Situating ideas within their historical, social, and institutional settings to understand how context shapes intellectual production.
-                  </p>
-                </div>
-                
-                <div className="bg-white p-6 oxford-card">
-                  <div className="text-gold text-2xl mb-3">
-                    <ArrowUp10 />
-                  </div>
-                  <h4 className="font-playfair text-dartmouth text-lg mb-2">Comparative Thinking</h4>
-                  <p className="text-sm">
-                    Encouraging students to make connections across national boundaries, disciplines, and time periods.
-                  </p>
-                </div>
-              </div>
+              <TopicCard 
+                title="Travel Adventures"
+                description="Narratives and reflections from various destinations around the world, focusing on cultural insights, hidden gems, and practical travel tips."
+                icon={<Globe className="text-dartmouth text-2xl" />}
+                count={22}
+              />
               
-              <p className="mb-4">
-                In tutorials and seminars, I create an environment that balances scholarly rigor with intellectual exploration. Students are encouraged to pursue their own questions while developing the analytical skills necessary for advanced academic work. I emphasize the value of precision in writing and clarity in argumentation.
-              </p>
-              
-              <p>
-                My goal is not simply to convey historical knowledge but to help students become thoughtful interpreters of complex intellectual traditions and to recognize the continuing relevance of historical ideas to contemporary questions.
-              </p>
+              <TopicCard 
+                title="Engineering Management"
+                description="Perspectives on leading technical teams, project management methodologies, and creating environments that foster both innovation and productivity."
+                icon={<ArrowUp10 className="text-dartmouth text-2xl" />}
+                count={9}
+              />
             </div>
           </div>
         </div>
         
-        <div id="resources">
-          <h3 className="font-playfair text-dartmouth text-2xl mb-8">Student Resources</h3>
+        <div id="archive">
+          <h3 className="font-playfair text-dartmouth text-2xl mb-8">Archives</h3>
           
-          <div className="grid md:grid-cols-2 gap-8">
-            <ResourceCard 
-              title="Essay Writing Guide"
-              subtitle="For undergraduate and graduate students"
-              description="A comprehensive guide to writing academic essays in intellectual history, with sections on developing research questions, constructing arguments, and working with primary sources."
-              linkText="Download Guide (PDF)"
-              icon={<FileText className="text-3xl" />}
+          <div className="grid md:grid-cols-3 gap-8">
+            <ArchiveCard 
+              title="2023"
+              description="Posts covering my MEM studies at Dartmouth, recent travel experiences in Asia, and reflections on tech industry trends."
+              count={18}
             />
             
-            <ResourceCard 
-              title="Office Hours"
-              subtitle="Scheduling and policies"
-              description="Information about scheduling one-on-one meetings, tutorial sessions, and dissertation consultations. Includes policies on appointment booking and cancellation."
-              linkText="Schedule Appointment"
-              icon={<Clock className="text-3xl" />}
+            <ArchiveCard 
+              title="2022"
+              description="Entries documenting my final year of undergraduate studies, internship experiences, and early travel adventures in South America."
+              count={24}
             />
             
-            <ResourceCard 
-              title="Primary Source Archive"
-              subtitle="Digital collection for research"
-              description="Access to digitized primary sources relevant to nineteenth-century intellectual history, including letters, journal articles, and unpublished manuscripts."
-              linkText="Access Archive"
-              icon={<BookOpen className="text-3xl" />}
+            <ArchiveCard 
+              title="2021"
+              description="Content focused on software development projects, learning experiences, and the beginnings of my travel documentation."
+              count={15}
             />
-            
-            <ResourceCard 
-              title="Graduate Supervision"
-              subtitle="Information for prospective students"
-              description="Details about my approach to graduate supervision, current and former advisees, and guidelines for submitting research proposals to work under my supervision."
-              linkText="Learn More"
-              icon={<GraduationCap className="text-3xl" />}
-            />
+          </div>
+          
+          <div className="mt-16 card bg-white border border-lightgray p-8 rounded-lg shadow-md">
+            <h4 className="font-playfair text-dartmouth text-xl mb-6">Popular Tags</h4>
+            <div className="flex flex-wrap gap-3">
+              <span className="bg-offwhite border border-lightgray px-3 py-1 text-sm rounded-full flex items-center gap-1">
+                <Tag size={14} /> Travel <span className="text-slate ml-1">(32)</span>
+              </span>
+              <span className="bg-offwhite border border-lightgray px-3 py-1 text-sm rounded-full flex items-center gap-1">
+                <Tag size={14} /> Technology <span className="text-slate ml-1">(24)</span>
+              </span>
+              <span className="bg-offwhite border border-lightgray px-3 py-1 text-sm rounded-full flex items-center gap-1">
+                <Tag size={14} /> Engineering <span className="text-slate ml-1">(19)</span>
+              </span>
+              <span className="bg-offwhite border border-lightgray px-3 py-1 text-sm rounded-full flex items-center gap-1">
+                <Tag size={14} /> Photography <span className="text-slate ml-1">(17)</span>
+              </span>
+              <span className="bg-offwhite border border-lightgray px-3 py-1 text-sm rounded-full flex items-center gap-1">
+                <Tag size={14} /> Leadership <span className="text-slate ml-1">(15)</span>
+              </span>
+              <span className="bg-offwhite border border-lightgray px-3 py-1 text-sm rounded-full flex items-center gap-1">
+                <Tag size={14} /> Dartmouth <span className="text-slate ml-1">(12)</span>
+              </span>
+              <span className="bg-offwhite border border-lightgray px-3 py-1 text-sm rounded-full flex items-center gap-1">
+                <Tag size={14} /> Software <span className="text-slate ml-1">(11)</span>
+              </span>
+              <span className="bg-offwhite border border-lightgray px-3 py-1 text-sm rounded-full flex items-center gap-1">
+                <Tag size={14} /> Japan <span className="text-slate ml-1">(9)</span>
+              </span>
+              <span className="bg-offwhite border border-lightgray px-3 py-1 text-sm rounded-full flex items-center gap-1">
+                <Tag size={14} /> Hiking <span className="text-slate ml-1">(8)</span>
+              </span>
+              <span className="bg-offwhite border border-lightgray px-3 py-1 text-sm rounded-full flex items-center gap-1">
+                <Tag size={14} /> Programming <span className="text-slate ml-1">(7)</span>
+              </span>
+            </div>
           </div>
         </div>
       </div>
@@ -165,60 +162,83 @@ export default function Teaching() {
   );
 }
 
-interface CourseCardProps {
+interface BlogPostCardProps {
   title: string;
-  term: string;
-  level: string;
+  date: string;
+  category: string;
   description: string;
-  texts: string[];
+  readTime: string;
+  image: string;
+  comments: number;
+  likes: number;
 }
 
-function CourseCard({ title, term, level, description, texts }: CourseCardProps) {
+function BlogPostCard({ title, date, category, description, readTime, image, comments, likes }: BlogPostCardProps) {
   return (
-    <div className="oxford-card bg-white p-6">
-      <div className="flex justify-between items-start mb-4">
-        <h4 className="font-playfair text-oxblood text-xl">{title}</h4>
-        <span className="bg-cream text-dartmouth text-xs px-2 py-1 rounded-full">{level}</span>
-      </div>
-      <p className="text-sm text-tweed/70 mb-4">{term}</p>
-      <p className="mb-6">{description}</p>
-      <div className="border-t border-tweed/10 pt-4 mt-4">
-        <h5 className="text-dartmouth font-medium mb-2">Key Texts</h5>
-        <ul className="text-sm space-y-1">
-          {texts.map((text, index) => (
-            <li key={index}>{text}</li>
-          ))}
-        </ul>
+    <div className="card bg-white border border-lightgray rounded-lg shadow-md overflow-hidden">
+      <img src={image} alt={title} className="w-full h-48 object-cover" />
+      <div className="p-6">
+        <div className="flex justify-between items-center mb-2">
+          <span className="text-xs bg-dartmouth text-white px-2 py-1 rounded-full">{category}</span>
+          <span className="text-xs text-slate flex items-center"><Calendar size={12} className="mr-1" /> {date}</span>
+        </div>
+        <h4 className="font-playfair text-dartmouth text-xl mb-2">{title}</h4>
+        <p className="mb-4 text-darkgray text-sm">{description}</p>
+        <div className="flex justify-between items-center">
+          <div className="flex items-center space-x-4 text-xs text-slate">
+            <span className="flex items-center"><Eye size={14} className="mr-1" /> {readTime}</span>
+            <span className="flex items-center"><MessageCircle size={14} className="mr-1" /> {comments}</span>
+            <span className="flex items-center"><Heart size={14} className="mr-1" /> {likes}</span>
+          </div>
+          <a href="#" className="text-dartmouth hover:text-dartmouth/80 text-sm font-medium flex items-center gap-1">
+            Read Post <ArrowRight size={14} />
+          </a>
+        </div>
       </div>
     </div>
   );
 }
 
-interface ResourceCardProps {
+interface TopicCardProps {
   title: string;
-  subtitle: string;
   description: string;
-  linkText: string;
   icon: React.ReactNode;
+  count: number;
 }
 
-function ResourceCard({ title, subtitle, description, linkText, icon }: ResourceCardProps) {
+function TopicCard({ title, description, icon, count }: TopicCardProps) {
   return (
-    <div className="oxford-card bg-white p-6">
-      <div className="flex items-center gap-4 mb-6">
-        <div className="text-gold">
+    <div className="border border-lightgray rounded-lg p-6 hover:shadow-md transition-shadow">
+      <div className="flex flex-col items-center text-center">
+        <div className="mb-4">
           {icon}
         </div>
-        <div>
-          <h4 className="font-playfair text-oxblood text-xl">{title}</h4>
-          <p className="text-sm text-tweed/70">{subtitle}</p>
-        </div>
+        <h4 className="font-playfair text-dartmouth text-xl mb-2">{title}</h4>
+        <p className="text-darkgray text-sm mb-4">{description}</p>
+        <span className="bg-offwhite px-3 py-1 text-xs rounded-full border border-lightgray">
+          {count} posts
+        </span>
       </div>
-      <p className="mb-6">
-        {description}
-      </p>
+    </div>
+  );
+}
+
+interface ArchiveCardProps {
+  title: string;
+  description: string;
+  count: number;
+}
+
+function ArchiveCard({ title, description, count }: ArchiveCardProps) {
+  return (
+    <div className="card bg-white border border-lightgray p-6 rounded-lg shadow-md">
+      <h4 className="font-playfair text-dartmouth text-xl mb-2 flex justify-between items-center">
+        {title}
+        <span className="text-sm bg-offwhite px-2 py-1 rounded-full border border-lightgray">{count}</span>
+      </h4>
+      <p className="text-darkgray text-sm mb-4">{description}</p>
       <a href="#" className="text-dartmouth hover:text-dartmouth/80 text-sm font-medium flex items-center gap-1">
-        {linkText} <ArrowRight className="h-4 w-4" />
+        Browse Archive <ArrowRight size={14} />
       </a>
     </div>
   );
