@@ -15,13 +15,14 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       colors: {
-        // Custom Ivy League color palette
+        // Custom color palette with Dartmouth Green
         dartmouth: "#00693E",
-        cream: "#F5F5DC",
-        oxblood: "#4A1C1A",
-        navy: "#001F3F",
-        tweed: "#6E5849",
-        gold: "#BFA46F",
+        white: "#FFFFFF",
+        offwhite: "#F8F8F8",
+        lightgray: "#E8E8E8",
+        darkgray: "#333333",
+        slate: "#556270",
+        accent: "#4ECDC4",
         
         // Default shadcn colors
         background: "hsl(var(--background))",
@@ -46,7 +47,7 @@ export default {
           DEFAULT: "hsl(var(--muted))",
           foreground: "hsl(var(--muted-foreground))",
         },
-        accent: {
+        accentColor: {
           DEFAULT: "hsl(var(--accent))",
           foreground: "hsl(var(--accent-foreground))",
         },

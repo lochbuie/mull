@@ -6,43 +6,35 @@
 
 @layer base {
   :root {
-    --background: 47 41% 94%;
-    --foreground: 33 20% 36%;
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
 
     --card: 0 0% 100%;
-    --card-foreground: 33 20% 36%;
+    --card-foreground: 222.2 84% 4.9%;
 
-    --popover: 47 41% 94%;
-    --popover-foreground: 33 20% 36%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
 
     --primary: 154 100% 20%;
-    --primary-foreground: 47 41% 94%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 47 41% 94%;
-    --secondary-foreground: 154 100% 20%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
-    --accent: 41 31% 59%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 176 57% 56%;
+    --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 33 20% 36% / 0.2;
-    --input: 33 20% 36% / 0.3;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
     --ring: 154 100% 20%;
 
     --radius: 0.4rem;
-
-    /* Custom colors */
-    --dartmouth: 154 100% 20%;
-    --cream: 60 56% 92%;
-    --oxblood: 4 48% 20%;
-    --navy: 210 100% 13%;
-    --tweed: 33 20% 36%;
-    --gold: 41 31% 59%;
   }
 
   * {
@@ -50,9 +42,9 @@
   }
 
   body {
-    @apply font-garamond text-tweed bg-cream antialiased;
+    @apply font-garamond text-darkgray bg-white antialiased;
     background-image: 
-      linear-gradient(rgba(245, 245, 220, 0.97), rgba(245, 245, 220, 0.97)),
+      linear-gradient(rgba(255, 255, 255, 0.97), rgba(255, 255, 255, 0.97)),
       url('https://pixabay.com/get/g27c407a4ff6db083ecd5b41a5a04be65208e95df09ea777f9bb9f7b47f731ade43d0d5154b90658d3916fdc2867b699f1c1ba56872b67597ff7d648856c0e198_1280.jpg');
     background-attachment: fixed;
   }
@@ -64,15 +56,15 @@
 
 @layer utilities {
   .pinstripe {
-    background-image: linear-gradient(90deg, transparent 50%, rgba(245, 245, 220, 0.15) 50%);
+    background-image: linear-gradient(90deg, transparent 50%, rgba(232, 232, 232, 0.15) 50%);
     background-size: 4px 100%;
   }
 
-  .oxford-card {
-    @apply shadow-md border border-tweed/20 transition-all duration-300;
+  .card {
+    @apply shadow-md border border-lightgray transition-all duration-300;
   }
 
-  .oxford-card:hover {
+  .card:hover {
     @apply shadow-lg;
   }
 

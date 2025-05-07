@@ -6,24 +6,25 @@ import { useScrollSpy } from "@/hooks/use-scroll-spy";
 const navItems = [
   { name: "About", href: "#about" },
   { 
-    name: "Research", 
-    href: "#research",
+    name: "Travel", 
+    href: "#travel",
     dropdown: [
-      { name: "Publications", href: "#publications" },
-      { name: "Current Work", href: "#current-work" },
-      { name: "Presentations", href: "#presentations" }
+      { name: "Destinations", href: "#destinations" },
+      { name: "Upcoming Trips", href: "#upcoming-trips" },
+      { name: "Photo Gallery", href: "#gallery" }
     ]
   },
   { 
-    name: "Teaching", 
-    href: "#teaching",
+    name: "Blog", 
+    href: "#blog",
     dropdown: [
-      { name: "Courses", href: "#courses" },
-      { name: "Philosophy", href: "#philosophy" },
-      { name: "Resources", href: "#resources" }
+      { name: "Latest Posts", href: "#latest-posts" },
+      { name: "Topics", href: "#topics" },
+      { name: "Archive", href: "#archive" }
     ]
   },
-  { name: "Essays", href: "#essays" },
+  { name: "Projects", href: "#projects" },
+  { name: "Hobbies", href: "#hobbies" },
   { name: "Contact", href: "#contact" },
 ];
 
@@ -51,13 +52,13 @@ export default function Header() {
   }, []);
 
   return (
-    <header className={`bg-cream sticky top-0 z-50 border-b border-dartmouth/20 transition-shadow ${isScrolled ? 'shadow-md' : ''}`}>
+    <header className={`bg-white sticky top-0 z-50 border-b border-dartmouth/20 transition-shadow ${isScrolled ? 'shadow-md' : ''}`}>
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <div className="flex items-center space-x-4">
-          <Monogram initials="JH" />
+          <Monogram initials="AJ" />
           <div className="hidden md:block">
-            <h1 className="font-playfair text-dartmouth text-2xl font-semibold">Jonathan Harrington</h1>
-            <p className="text-sm text-tweed/80 italic">Academic • Writer • Historian</p>
+            <h1 className="font-playfair text-dartmouth text-2xl font-semibold">Alex Johnson</h1>
+            <p className="text-sm text-slate italic">Dartmouth MEM • Traveler • Technology Enthusiast</p>
           </div>
         </div>
         
@@ -98,12 +99,12 @@ export default function Header() {
               </a>
               
               {item.dropdown && (
-                <div className="absolute z-10 bg-cream border border-dartmouth/20 shadow-lg rounded-sm w-48 py-2 mt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
+                <div className="absolute z-10 bg-white border border-lightgray shadow-lg rounded-sm w-48 py-2 mt-1 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
                   {item.dropdown.map((dropdownItem) => (
                     <a 
                       key={dropdownItem.name} 
                       href={dropdownItem.href}
-                      className="block px-4 py-2 text-dartmouth hover:bg-dartmouth hover:text-cream transition-colors"
+                      className="block px-4 py-2 text-darkgray hover:bg-dartmouth hover:text-white transition-colors"
                     >
                       {dropdownItem.name}
                     </a>
@@ -117,7 +118,7 @@ export default function Header() {
       
       {/* Mobile Navigation */}
       <div 
-        className={`md:hidden bg-cream border-t border-dartmouth/20 px-4 py-2 absolute w-full transition-all duration-300 ${
+        className={`md:hidden bg-white border-t border-lightgray px-4 py-2 absolute w-full transition-all duration-300 ${
           mobileMenuOpen ? 'max-h-screen opacity-100 visible' : 'max-h-0 opacity-0 invisible overflow-hidden'
         }`}
       >

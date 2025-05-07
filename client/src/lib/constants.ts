@@ -1,10 +1,11 @@
 export const COLORS = {
   dartmouth: "#00693E",
-  cream: "#F5F5DC",
-  oxblood: "#4A1C1A",
-  navy: "#001F3F",
-  tweed: "#6E5849",
-  gold: "#BFA46F",
+  white: "#FFFFFF",
+  offwhite: "#F8F8F8",
+  lightgray: "#E8E8E8",
+  darkgray: "#333333",
+  slate: "#556270",
+  accent: "#4ECDC4",
 };
 
 export const FONTS = {
