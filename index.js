@@ -140,11 +140,11 @@ var vite_config_default = defineConfig({
     }
   },
   root: path.resolve(import.meta.dirname, "client"),
+  base: "/mull/",
   build: {
     outDir: path.resolve(import.meta.dirname, "dist"),
     emptyOutDir: true
-  },
-  base: "/mull/"
+  }
 });
 
 // server/vite.ts
