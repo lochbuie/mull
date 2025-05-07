@@ -9,6 +9,7 @@ export default {
         playfair: ["'Playfair Display'", 'serif'],
         garamond: ["'EB Garamond'", 'serif'],
         baskerville: ["'Libre Baskerville'", 'serif'],
+        cormorant: ["'Cormorant Garamond'", 'serif'],
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -16,17 +17,17 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       colors: {
-        // Dark Academia inspired color palette
-        darkoak: "#271D13",
-        mahogany: "#4A2511",
-        oxblood: "#6B1D14",
-        tweed: "#8A7A61",
-        gold: "#B9975B",
-        parchment: "#F2EFE6",
-        ivory: "#F8F3E6",
-        dartmouth: "#00693E", // Keeping this as a brand color
-        copper: "#B87333",
-        chocolate: "#7B3F00",
+        // Refined dark academia palette
+        darkoak: "#1A150F", // Darker background
+        mahogany: "#3D1E11", // Deeper wood tone
+        oxblood: "#541209", // Richer red
+        tweed: "#695F4C", // Muted accent
+        gold: "#D4AF37", // Brighter gold for better contrast
+        brass: "#B5A642", // Subtle metal tone
+        parchment: "#F2E8CF", // Aged paper 
+        cream: "#FFF8E7", // Lighter text color for contrast
+        sage: "#515F40", // Muted green accent
+        ebony: "#13100B", // Nearly black for depth
         
         // Default shadcn colors
         background: "hsl(var(--background))",
