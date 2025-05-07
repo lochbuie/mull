@@ -4,19 +4,19 @@ import { useQuery } from "@tanstack/react-query";
 
 export default function Travel() {
   return (
-    <section id="travel" className="bg-white py-16 md:py-24 border-t border-b border-lightgray/20">
+    <section id="travel" className="py-16 md:py-24 border-t border-b border-gold/20 book-texture">
       <div className="container mx-auto px-4 md:px-8">
         <div className="max-w-3xl mx-auto mb-16">
-          <div className="inline-block border-b-2 border-dartmouth mb-6">
-            <h2 className="font-playfair text-dartmouth text-3xl md:text-4xl">Travel Adventures</h2>
+          <div className="inline-block border-b-2 border-gold mb-6">
+            <h2 className="font-cormorant text-gold text-3xl md:text-4xl">Travel Adventures</h2>
           </div>
-          <p className="text-lg text-darkgray">
+          <p className="text-lg text-cream/90 font-baskerville">
             Exploring the world has been one of my greatest passions. I believe travel broadens our perspective, challenges our assumptions, and connects us to diverse cultures and environments. Here are some highlights from my journeys.
           </p>
         </div>
         
         <div id="destinations" className="mb-16">
-          <h3 className="font-playfair text-dartmouth text-2xl mb-8">Favorite Destinations</h3>
+          <h3 className="font-cormorant text-gold text-2xl mb-8">Favorite Destinations</h3>
           
           <div className="grid md:grid-cols-2 gap-8">
             <DestinationCard 

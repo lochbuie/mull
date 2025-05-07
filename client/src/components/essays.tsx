@@ -2,13 +2,13 @@ import { ArrowRight, Github, ExternalLink, Code, Server, Database, Monitor, Layo
 
 export default function Projects() {
   return (
-    <section id="projects" className="bg-white py-16 md:py-24 border-t border-b border-lightgray/20">
+    <section id="projects" className="py-16 md:py-24 border-t border-b border-gold/20 oxford-pattern">
       <div className="container mx-auto px-4 md:px-8">
         <div className="max-w-3xl mx-auto mb-16">
-          <div className="inline-block border-b-2 border-dartmouth mb-6">
-            <h2 className="font-playfair text-dartmouth text-3xl md:text-4xl">Projects</h2>
+          <div className="inline-block border-b-2 border-gold mb-6">
+            <h2 className="font-cormorant text-gold text-3xl md:text-4xl">Projects</h2>
           </div>
-          <p className="text-lg text-darkgray">
+          <p className="text-lg text-cream/90 font-baskerville">
             A collection of my technical projects, engineering management case studies, and creative endeavors. These projects reflect my passion for solving problems at the intersection of technology, design, and user experience.
           </p>
         </div>
@@ -52,32 +52,32 @@ export default function Projects() {
         </div>
         
         <div className="mb-16">
-          <h3 className="font-playfair text-dartmouth text-2xl mb-8">Featured Project</h3>
+          <h3 className="font-cormorant text-gold text-2xl mb-8">Featured Project</h3>
           
-          <div className="card bg-white border border-lightgray rounded-lg shadow-md overflow-hidden">
+          <div className="elegant-card overflow-hidden border border-gold/30 shadow-md vintage-shadow">
             <div className="grid md:grid-cols-2 gap-0">
               <div className="p-8">
-                <span className="bg-dartmouth text-white text-xs px-3 py-1 rounded-full mb-4 inline-block">
+                <span className="bg-deepforest text-cream text-xs px-3 py-1 border border-gold/20 mb-4 inline-block">
                   Capstone Project
                 </span>
-                <h4 className="font-playfair text-dartmouth text-2xl mb-4">AI-Powered Travel Itinerary Generator</h4>
-                <p className="text-darkgray mb-6">
+                <h4 className="font-cormorant text-gold text-2xl mb-4">AI-Powered Travel Itinerary Generator</h4>
+                <p className="text-cream/90 font-baskerville mb-6">
                   My MEM capstone project combines machine learning with travel expertise to create personalized itineraries based on user preferences, budget constraints, and travel history. The system analyzes thousands of reviews and photos to recommend authentic local experiences beyond typical tourist attractions.
                 </p>
                 
                 <div className="grid grid-cols-2 gap-6 mb-6">
                   <div>
-                    <h5 className="font-medium text-dartmouth mb-2">Technologies</h5>
-                    <ul className="space-y-1 text-sm text-slate">
-                      <li className="flex items-center gap-1"><Code size={14} /> Python/TensorFlow</li>
-                      <li className="flex items-center gap-1"><Server size={14} /> Flask API</li>
-                      <li className="flex items-center gap-1"><Monitor size={14} /> React Frontend</li>
-                      <li className="flex items-center gap-1"><Database size={14} /> PostgreSQL</li>
+                    <h5 className="font-cormorant text-gold mb-2">Technologies</h5>
+                    <ul className="space-y-1 text-sm text-cream/80">
+                      <li className="flex items-center gap-1"><Code size={14} className="text-gold" /> Python/TensorFlow</li>
+                      <li className="flex items-center gap-1"><Server size={14} className="text-gold" /> Flask API</li>
+                      <li className="flex items-center gap-1"><Monitor size={14} className="text-gold" /> React Frontend</li>
+                      <li className="flex items-center gap-1"><Database size={14} className="text-gold" /> PostgreSQL</li>
                     </ul>
                   </div>
                   <div>
-                    <h5 className="font-medium text-dartmouth mb-2">Key Features</h5>
-                    <ul className="space-y-1 text-sm text-slate">
+                    <h5 className="font-cormorant text-gold mb-2">Key Features</h5>
+                    <ul className="space-y-1 text-sm text-cream/80">
                       <li>Personality-based recommendations</li>
                       <li>Real-time availability checking</li>
                       <li>Budget optimization</li>
@@ -87,10 +87,10 @@ export default function Projects() {
                 </div>
                 
                 <div className="flex gap-4">
-                  <a href="#" className="inline-flex items-center justify-center gap-2 bg-dartmouth text-white px-4 py-2 rounded hover:bg-dartmouth/90 transition-colors text-sm">
+                  <a href="#" className="inline-flex items-center justify-center gap-2 border border-gold text-gold hover:bg-gold hover:text-huntergreen px-4 py-2 transition-colors text-sm">
                     <Github size={16} /> View Repository
                   </a>
-                  <a href="#" className="inline-flex items-center justify-center gap-2 border border-dartmouth text-dartmouth px-4 py-2 rounded hover:bg-dartmouth/10 transition-colors text-sm">
+                  <a href="#" className="inline-flex items-center justify-center gap-2 border border-cream/30 text-cream/90 hover:border-cream/70 px-4 py-2 transition-colors text-sm">
                     <ExternalLink size={16} /> Live Demo
                   </a>
                 </div>
@@ -100,7 +100,7 @@ export default function Projects() {
                 <img 
                   src="https://images.unsplash.com/photo-1527631746610-bca00a040d60?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
                   alt="AI Travel Itinerary Generator Interface" 
-                  className="w-full h-full object-cover" 
+                  className="w-full h-full object-cover border-l border-gold/20" 
                 />
               </div>
             </div>
@@ -108,50 +108,50 @@ export default function Projects() {
         </div>
         
         <div>
-          <h3 className="font-playfair text-dartmouth text-2xl mb-8">Additional Projects</h3>
+          <h3 className="font-cormorant text-gold text-2xl mb-8">Additional Projects</h3>
           
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            <div className="card bg-white border border-lightgray p-4 rounded-lg shadow-sm text-center">
-              <div className="text-dartmouth mb-2 flex justify-center">
+            <div className="elegant-card p-4 border border-gold/30 text-center vintage-shadow">
+              <div className="text-gold mb-2 flex justify-center">
                 <LayoutGrid size={24} />
               </div>
-              <h5 className="font-playfair text-dartmouth mb-1">Smart Home Dashboard</h5>
-              <p className="text-xs text-slate mb-2">IoT Control Interface</p>
+              <h5 className="font-cormorant text-gold mb-1">Smart Home Dashboard</h5>
+              <p className="text-xs text-cream/80 mb-2">IoT Control Interface</p>
               <div className="flex justify-center gap-2">
-                <a href="#" className="text-xs text-dartmouth hover:text-dartmouth/80">Details</a>
+                <a href="#" className="text-xs text-gold hover:text-cream/90">Details</a>
               </div>
             </div>
             
-            <div className="card bg-white border border-lightgray p-4 rounded-lg shadow-sm text-center">
-              <div className="text-dartmouth mb-2 flex justify-center">
+            <div className="elegant-card p-4 border border-gold/30 text-center vintage-shadow">
+              <div className="text-gold mb-2 flex justify-center">
                 <Monitor size={24} />
               </div>
-              <h5 className="font-playfair text-dartmouth mb-1">Hiking Trail Finder</h5>
-              <p className="text-xs text-slate mb-2">Interactive Map Application</p>
+              <h5 className="font-cormorant text-gold mb-1">Hiking Trail Finder</h5>
+              <p className="text-xs text-cream/80 mb-2">Interactive Map Application</p>
               <div className="flex justify-center gap-2">
-                <a href="#" className="text-xs text-dartmouth hover:text-dartmouth/80">Details</a>
+                <a href="#" className="text-xs text-gold hover:text-cream/90">Details</a>
               </div>
             </div>
             
-            <div className="card bg-white border border-lightgray p-4 rounded-lg shadow-sm text-center">
-              <div className="text-dartmouth mb-2 flex justify-center">
+            <div className="elegant-card p-4 border border-gold/30 text-center vintage-shadow">
+              <div className="text-gold mb-2 flex justify-center">
                 <Database size={24} />
               </div>
-              <h5 className="font-playfair text-dartmouth mb-1">Photography Portfolio</h5>
-              <p className="text-xs text-slate mb-2">Image Management System</p>
+              <h5 className="font-cormorant text-gold mb-1">Photography Portfolio</h5>
+              <p className="text-xs text-cream/80 mb-2">Image Management System</p>
               <div className="flex justify-center gap-2">
-                <a href="#" className="text-xs text-dartmouth hover:text-dartmouth/80">Details</a>
+                <a href="#" className="text-xs text-gold hover:text-cream/90">Details</a>
               </div>
             </div>
             
-            <div className="card bg-white border border-lightgray p-4 rounded-lg shadow-sm text-center">
-              <div className="text-dartmouth mb-2 flex justify-center">
+            <div className="elegant-card p-4 border border-gold/30 text-center vintage-shadow">
+              <div className="text-gold mb-2 flex justify-center">
                 <Server size={24} />
               </div>
-              <h5 className="font-playfair text-dartmouth mb-1">Learning Management Tool</h5>
-              <p className="text-xs text-slate mb-2">Educational Platform</p>
+              <h5 className="font-cormorant text-gold mb-1">Learning Management Tool</h5>
+              <p className="text-xs text-cream/80 mb-2">Educational Platform</p>
               <div className="flex justify-center gap-2">
-                <a href="#" className="text-xs text-dartmouth hover:text-dartmouth/80">Details</a>
+                <a href="#" className="text-xs text-gold hover:text-cream/90">Details</a>
               </div>
             </div>
           </div>
