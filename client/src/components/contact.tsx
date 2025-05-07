@@ -50,7 +50,7 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="py-16 md:py-24">
+    <section id="contact" className="py-16 md:py-24 bg-offwhite">
       <div className="container mx-auto px-4 md:px-8">
         <div className="max-w-3xl mx-auto mb-16">
           <div className="inline-block border-b-2 border-dartmouth mb-6">
@@ -78,12 +78,12 @@ export default function Contact() {
               </div>
               
               <div>
-                <label htmlFor="email" className="block text-tweed font-medium mb-2">Email</label>
+                <label htmlFor="email" className="block text-darkgray font-medium mb-2">Email</label>
                 <input
                   type="email"
                   id="email"
                   {...register("email")}
-                  className={`w-full px-4 py-3 border border-tweed/30 focus:border-dartmouth focus:ring-1 focus:ring-dartmouth focus:outline-none bg-cream ${errors.email ? "border-red-500" : ""}`}
+                  className={`w-full px-4 py-3 border border-lightgray focus:border-dartmouth focus:ring-1 focus:ring-dartmouth focus:outline-none bg-white rounded-md ${errors.email ? "border-red-500" : ""}`}
                 />
                 {errors.email && (
                   <p className="text-red-500 text-sm mt-1">{errors.email.message}</p>
@@ -91,11 +91,11 @@ export default function Contact() {
               </div>
               
               <div>
-                <label htmlFor="subject" className="block text-tweed font-medium mb-2">Subject</label>
+                <label htmlFor="subject" className="block text-darkgray font-medium mb-2">Subject</label>
                 <select
                   id="subject"
                   {...register("subject")}
-                  className={`w-full px-4 py-3 border border-tweed/30 focus:border-dartmouth focus:ring-1 focus:ring-dartmouth focus:outline-none bg-cream ${errors.subject ? "border-red-500" : ""}`}
+                  className={`w-full px-4 py-3 border border-lightgray focus:border-dartmouth focus:ring-1 focus:ring-dartmouth focus:outline-none bg-white rounded-md ${errors.subject ? "border-red-500" : ""}`}
                 >
                   <option value="">Please select a subject</option>
                   <option value="project">Project Collaboration</option>
@@ -110,12 +110,12 @@ export default function Contact() {
               </div>
               
               <div>
-                <label htmlFor="message" className="block text-tweed font-medium mb-2">Message</label>
+                <label htmlFor="message" className="block text-darkgray font-medium mb-2">Message</label>
                 <textarea
                   id="message"
                   {...register("message")}
                   rows={5}
-                  className={`w-full px-4 py-3 border border-tweed/30 focus:border-dartmouth focus:ring-1 focus:ring-dartmouth focus:outline-none bg-cream ${errors.message ? "border-red-500" : ""}`}
+                  className={`w-full px-4 py-3 border border-lightgray focus:border-dartmouth focus:ring-1 focus:ring-dartmouth focus:outline-none bg-white rounded-md ${errors.message ? "border-red-500" : ""}`}
                 />
                 {errors.message && (
                   <p className="text-red-500 text-sm mt-1">{errors.message.message}</p>
@@ -126,7 +126,7 @@ export default function Contact() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="bg-dartmouth text-cream px-6 py-3 font-medium rounded hover:bg-dartmouth/90 transition-colors disabled:opacity-70"
+                  className="bg-dartmouth text-white px-6 py-3 font-medium rounded-md hover:bg-dartmouth/90 transition-colors disabled:opacity-70"
                 >
                   {isSubmitting ? "Sending..." : "Send Message"}
                 </button>
