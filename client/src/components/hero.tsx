@@ -21,7 +21,7 @@ export default function Hero() {
           <div className="lg:w-7/12 relative">
             {/* Hero decorative ornament */}
             <div className="absolute -top-20 -left-6 text-gold/10 font-cormorant text-[180px] leading-none opacity-30 select-none pointer-events-none hidden md:block">
-              A
+              J
             </div>
             
             <div>
@@ -33,9 +33,9 @@ export default function Hero() {
               
               <div className="relative mb-8">
                 <h1 className="font-cormorant text-5xl md:text-7xl lg:text-8xl font-semibold tracking-tight mb-4 text-gold">
-                  <span className="relative z-10">Alexander</span>
+                  <span className="relative z-10">Jackson</span>
                   <br/>
-                  <span className="relative z-10">Johnson</span>
+                  <span className="relative z-10">McLain</span>
                 </h1>
                 <div className="absolute h-6 -bottom-1 left-0 w-1/2 bg-gradient-to-r from-mahogany/30 to-transparent z-0"></div>
               </div>

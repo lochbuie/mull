@@ -59,7 +59,7 @@ export default function Header() {
           <div className="relative">
             <div className="w-14 h-14 border border-gold/60 flex items-center justify-center">
               <div className="w-10 h-10 border border-gold/40 flex items-center justify-center">
-                <span className="font-cormorant text-gold text-2xl font-semibold tracking-wide">AJ</span>
+                <span className="font-cormorant text-gold text-2xl font-semibold tracking-wide">JM</span>
               </div>
             </div>
             <div className="absolute -bottom-1 -right-1 w-7 h-7 border-r border-b border-gold/40"></div>
@@ -67,7 +67,7 @@ export default function Header() {
           </div>
           
           <div className="hidden md:block">
-            <h1 className="font-cormorant text-gold text-2xl font-semibold tracking-wide">Alexander Johnson</h1>
+            <h1 className="font-cormorant text-gold text-2xl font-semibold tracking-wide">Jackson McLain</h1>
             <div className="flex items-center text-cream/70 mt-1">
               <span className="text-sm font-garamond italic">Dartmouth College</span>
               <span className="mx-2 text-gold text-xs">•</span>

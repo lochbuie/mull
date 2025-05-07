@@ -25,7 +25,7 @@ export default function About() {
                 <div className="absolute inset-0 opacity-10 mix-blend-overlay bg-gradient-to-br from-gold/30 to-transparent pointer-events-none z-10"></div>
                 <img 
                   src="https://images.unsplash.com/photo-1517849845537-4d257902454a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
-                  alt="Alex Johnson, Dartmouth MEM Student" 
+                  alt="Jackson McLain, Dartmouth MEM Student" 
                   className="w-full h-auto object-cover vintage-shadow relative z-0" 
                 />
                 

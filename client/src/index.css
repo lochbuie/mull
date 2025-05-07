@@ -190,7 +190,7 @@
   }
 
   .quote-mark {
-    @apply font-cormorant text-[6rem] leading-none text-gold/20 absolute top-2 left-0;
+    @apply font-cormorant text-[6rem] leading-none text-gold/20 absolute top-2 -left-6;
   }
 
   .decorative-line {
