@@ -157,7 +157,7 @@ export default function Projects() {
           </div>
           
           <div className="text-center mt-10">
-            <a href="#" className="inline-block border border-dartmouth text-dartmouth hover:bg-dartmouth hover:text-white transition-colors px-5 py-2 rounded">
+            <a href="#" className="inline-block border border-gold text-gold hover:bg-gold hover:text-huntergreen transition-colors px-5 py-2">
               View All Projects
             </a>
           </div>
@@ -181,31 +181,31 @@ interface ProjectCardProps {
 
 function ProjectCard({ title, category, date, description, image, imageAlt, technologies, github, liveLink }: ProjectCardProps) {
   return (
-    <div className="card bg-white border border-lightgray rounded-lg shadow-md overflow-hidden group">
+    <div className="border border-gold/30 shadow-md overflow-hidden vintage-shadow group">
       <div className="relative overflow-hidden">
         <img src={image} alt={imageAlt} className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-105" />
         <div className="absolute top-2 left-2">
-          <span className="bg-dartmouth text-white text-xs px-2 py-1 rounded-full">{category}</span>
+          <span className="bg-deepforest text-cream text-xs px-2 py-1 border border-gold/20">{category}</span>
         </div>
       </div>
-      <div className="p-6">
+      <div className="p-6 bg-huntergreen">
         <div className="flex justify-between items-center mb-2">
-          <h4 className="font-playfair text-dartmouth text-xl">{title}</h4>
+          <h4 className="font-cormorant text-gold text-xl">{title}</h4>
         </div>
-        <p className="text-xs text-slate mb-3">{date}</p>
-        <p className="mb-4 text-darkgray text-sm">{description}</p>
+        <p className="text-xs font-garamond italic text-cream/80 mb-3">{date}</p>
+        <p className="mb-4 text-cream/90 text-sm font-baskerville">{description}</p>
         <div className="flex flex-wrap gap-2 mb-4">
           {technologies.map((tech, index) => (
-            <span key={index} className="text-xs bg-offwhite px-2 py-1 rounded-full border border-lightgray">
+            <span key={index} className="text-xs bg-deepforest text-cream/90 px-2 py-1 border border-ivygreen/30">
               {tech}
             </span>
           ))}
         </div>
         <div className="flex justify-between items-center">
-          <a href={github} className="text-dartmouth hover:text-dartmouth/80 text-sm font-medium flex items-center gap-1">
+          <a href={github} className="text-gold hover:text-cream text-sm font-medium flex items-center gap-1 transition-colors">
             <Github size={14} /> Code
           </a>
-          <a href={liveLink} className="text-dartmouth hover:text-dartmouth/80 text-sm font-medium flex items-center gap-1">
+          <a href={liveLink} className="text-gold hover:text-cream text-sm font-medium flex items-center gap-1 transition-colors">
             Live Demo <ExternalLink size={14} />
           </a>
         </div>
